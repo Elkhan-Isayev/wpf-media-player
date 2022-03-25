@@ -12,14 +12,7 @@ namespace MediaPlayer
 	{
 		public MainWindow()
 		{
-			try
-			{
-				InitializeComponent();
-			}
-			catch(IOException ex)
-			{
-				Console.WriteLine(ex);
-			}
+			InitializeComponent();
 
 			mediaElement1.MediaOpened += MediaElement1_MediaOpened1;
 			Closed += MediaPlayer_Closed;
