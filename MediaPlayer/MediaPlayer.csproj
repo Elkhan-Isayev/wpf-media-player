@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="content\" />
+    <Folder Include="img\" />
   </ItemGroup>
 
 </Project>
