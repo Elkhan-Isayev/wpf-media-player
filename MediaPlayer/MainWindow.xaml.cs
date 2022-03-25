@@ -1,18 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace MediaPlayer
 {
@@ -24,6 +13,7 @@ namespace MediaPlayer
 		public MainWindow()
 		{
 			InitializeComponent();
+
 			mediaElement1.MediaOpened += MediaElement1_MediaOpened1;
 			Closed += MediaPlayer_Closed;
 		}
@@ -37,6 +27,7 @@ namespace MediaPlayer
 		{
 			mediaElement1.Play();
 		}
+		
 		private void Button_Click_2(object sender, RoutedEventArgs e)
 		{
 			mediaElement1.Stop();
@@ -80,6 +71,7 @@ namespace MediaPlayer
 		{
 			mediaElement1.Volume = slider2.Value;
 		}
+
 		private void MediaElement1_MediaOpened1(object sender, RoutedEventArgs e)
 		{
 			if (mediaElement1.NaturalDuration.HasTimeSpan)

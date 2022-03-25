@@ -6,9 +6,11 @@
         xmlns:local="clr-namespace:MediaPlayer"
         mc:Ignorable="d"
         Title="Media Player" Height="511.272" Width="525">
+    
     <Window.Background>
-        <ImageBrush ImageSource="\content\wall.jpg" Stretch="Fill"/>
+        <ImageBrush ImageSource="img\wall.jpg" />
     </Window.Background>
+
     <Grid>
         <MediaElement HorizontalAlignment="Left" Height="325" Margin="26,28,0,0" VerticalAlignment="Top" Width="464" Name="mediaElement1" LoadedBehavior="Manual"/>
         <Slider HorizontalAlignment="Left" Margin="26,373,0,0" VerticalAlignment="Top" Height="27" Width="464" Name="slider1" ValueChanged="slider1_ValueChanged"/>
@@ -16,19 +18,19 @@
         <Label Content="Volume" HorizontalAlignment="Left" Margin="413,398,0,0" VerticalAlignment="Top" Height="27" Width="49"/>
 
         <Button HorizontalAlignment="Left" Margin="230,406,0,0" VerticalAlignment="Top" Width="59" Height="51" RenderTransformOrigin="0.515,0.027" Click="Button_Click_1">
-            <Image Source="content/start.png"/>
+            <Image Source="img/start.png" />
         </Button>
 
         <Button HorizontalAlignment="Left" Margin="159,405,0,0" VerticalAlignment="Top" Width="53" Height="51" RenderTransformOrigin="-0.233,0.517" Click="Button_Click_2">
-            <Image Source="content/restart.png"/>
+            <Image Source="img/restart.png" />
         </Button>
 
         <Button HorizontalAlignment="Left" Margin="307,408,0,0" VerticalAlignment="Top" Width="52" Height="48" Click="Button_Click_3">
-            <Image Source="content/stop.png"/>
+            <Image Source="img/stop.png" />
         </Button>
 
         <Button  HorizontalAlignment="Left" Margin="26,408,0,0" VerticalAlignment="Top" Width="55" Height="49" Click="Button_Click_4">
-            <Image Source="content/folder.png"/>
+            <Image Source="img/folder.png" />
         </Button>
     </Grid>
 </Window>

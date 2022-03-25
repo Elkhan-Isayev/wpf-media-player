@@ -8,7 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="content\" />
+    <None Remove="img\folder.png" />
+    <None Remove="img\restart.png" />
+    <None Remove="img\start.png" />
+    <None Remove="img\stop.png" />
+    <None Remove="img\wall.jpg" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Resource Include="img\folder.png" />
+    <Resource Include="img\restart.png" />
+    <Resource Include="img\start.png" />
+    <Resource Include="img\stop.png" />
+    <Resource Include="img\wall.jpg" />
+  </ItemGroup>
 </Project>
